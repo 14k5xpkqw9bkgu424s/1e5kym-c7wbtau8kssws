@@ -47,40 +47,26 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
     <fields>
-        <fullName>Current__c</fullName>
-        <defaultValue>false</defaultValue>
+        <fullName>Name__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Current</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Year__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <defaultValue>TEXT(YEAR(TODAY()))</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>true</externalId>
-        <label>Year</label>
-        <length>4</length>
-        <required>true</required>
+        <label>Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
-        <unique>true</unique>
+        <unique>false</unique>
     </fields>
     <label>Season</label>
-    <listViews>
-        <fullName>All</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
     <nameField>
         <label>Season Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Seasons</pluralLabel>
