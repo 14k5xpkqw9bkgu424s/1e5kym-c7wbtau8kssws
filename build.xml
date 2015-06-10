@@ -11,7 +11,14 @@
 				password="{$sf.password}"
 				serverurl="{$sf.serverurl}"
 				runAllTests="true"
-				deployRoot="{basedir}/src"/>			
+				deployRoot="{basedir}/src"/>
+			<sf.deploy
+				username="{$sf.package.username}"
+				password="{$sf.package.password}"
+				serverurl="{$sf.serverurl}"
+				checkOnly="true"
+				runAllTests="true"
+				deployRoot="{basedir}/src"/>				
 	</target>
 
 </project>
