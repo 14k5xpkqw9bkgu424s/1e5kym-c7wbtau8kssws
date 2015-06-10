@@ -1,0 +1,17 @@
+<project name="FormulaForce" xmlns:sf="antlib:com.salesforce" xmlns:if="ant:if" basedir=".">
+	<property name="sf.server" value="https://login.salesforce.com"/>
+	<typedef 
+		uri="antlib:com.salesforce" 
+		resource="com/salesforce/antlib.xml" 
+		classpath="${basedir}/lib/ant-salesforce.jar"/>
+
+	<target name="deploy.jenkins" depends="">
+			<sf.deploy
+				username="{$sf.username}"
+				password="{$sf.password}"
+				serverurl="{$sf.serverurl}"
+				runAllTests="true"
+				deployRoot="{basedir}/src"/>			
+	</target>
+
+</project>
