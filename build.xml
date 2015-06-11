@@ -6,19 +6,19 @@
 		classpath="${basedir}/lib/ant-salesforce.jar"/>
 
 	<target name="deploy.jenkins">
-			<sf:deploy
-				username="${sf.username}"
-				password="${sf.password}"
-				serverurl="${sf.server}"
-				runAllTests="true"
-				deployRoot="${basedir}/src"/>
-			<sf:deploy
-				username="${sf.package.username}"
-				password="${sf.package.password}"
-				serverurl="${sf.server}"
-				checkOnly="true"
-				runAllTests="true"
-				deployRoot="${basedir}/src"/>				
+		<sf:deploy
+			username="${sf.username}"
+			password="${sf.password}"
+			serverurl="${sf.server}"
+			runAllTests="true"
+			deployRoot="${basedir}/src"/>
+		<sf:deploy
+			username="${sf.package.username}"
+			password="${sf.package.password}"
+			serverurl="${sf.server}"
+			checkOnly="true"
+			runAllTests="true"
+			deployRoot="${basedir}/src"/>
 	</target>
- 
+
 </project>
