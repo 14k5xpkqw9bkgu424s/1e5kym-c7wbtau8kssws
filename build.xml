@@ -19,6 +19,6 @@
 			checkOnly="true"
 			runAllTests="true"
 			deployRoot="${basedir}/src"/>
-	</target> 
+	</target>  
 
 </project>
